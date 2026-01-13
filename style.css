@@ -190,3 +190,21 @@ footer {
     .grid, .voice-container { grid-template-columns: 1fr; }
     .hero h2 { font-size: 1.8rem; }
 }
+/* ===== スマホ用：ナビ崩れ防止 ===== */
+@media (max-width: 768px) {
+
+  nav ul {
+    display: flex;
+    flex-direction: column; /* 縦並び */
+    align-items: center;
+    gap: 12px;
+  }
+
+  nav li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    white
